@@ -1,0 +1,40 @@
+Routes/Endpoints til Blazor delen der bliver udgivet 04/03/2024
+
+
+
+Get   /posts/
+Get   /posts/{id}
+Post   /posts/ (Den tog godt lang tid at lave… jeg overkompliserede det selv..)
+        Format: 
+                {
+                "title": "Ny post",
+                "content": "Indhold af den nye post post ",
+                "upvotes": 0,
+                "downvotes": 0,
+                "user": 
+                    {
+                    "id": 1,
+                    "username": "Mikkel"
+                    }
+                }
+Post   /posts/{id}/comments/
+        Format:
+                 {
+                "content": "Dette er en kommentar til post 6, yes",
+                "upvotes": 0,
+                "downvotes": 0,
+                "user": 
+                    {
+                    "id": 1
+                    }
+                }
+Put   /posts/{id}/upvote    (downvote)
+Put   /posts/{id}/comments/{commentId}/upvote     (downvote)
+
+
+
+
+Kun have DbSet for Post og User
+
+
+
